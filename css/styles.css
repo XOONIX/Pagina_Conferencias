@@ -41,7 +41,7 @@
  body{
   margin: 0;                /*--Elimina el espacio blanco de arriba */
   padding: 0;
-  background: radial-gradient(circle, #FC7323 0%,  #39A900 100%);; /* Tu color de trasfondo azul/celeste */
+  background: radial-gradient(circle, #FC7323 0%,  #39A900 100%);; 
   display: flex;
   justify-content: center;   /*--Centra horizontalmente el contenedor blanco */
   min-height: 100vh; 
