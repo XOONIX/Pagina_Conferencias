@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Crónica de Createx 2026: el futuro del sistema moda, sportswear, impresión DTF y automatización textil en Corferias, vivido por un aprendiz del SENA Distrito Capital." />
-  <title>Createx 2026 · Conferencias SENA</title>
+  <title data-i18n="page_title_createx">Createx 2026 · Conferencias SENA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -17,7 +17,7 @@
     <a href="index.html" class="brand">
       <span class="brand__logo" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
       <span class="brand__text">
-        <strong>Conferencias</strong>
+        <strong data-i18n="brand_title">Conferencias</strong>
         <small>SENA · Distrito Capital</small>
       </span>
     </a>
@@ -25,11 +25,17 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html" class="nav-link">Inicio</a></li>
-      <li><a href="index.html#eventos" class="nav-link">Eventos</a></li>
-      <li><a href="colombia.html" class="nav-link">Colombia 5.0</a></li>
-      <li><a href="createx.html" class="nav-link active">Createx</a></li>
-      <li><a href="index.html#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+      <li><a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="index.html#eventos" class="nav-link" data-i18n="nav_events">Eventos</a></li>
+      <li><a href="colombia.html" class="nav-link" data-i18n="nav_colombia">Colombia 5.0</a></li>
+      <li><a href="createx.html" class="nav-link active" data-i18n="nav_createx">Createx</a></li>
+      <li><a href="index.html#contacto" class="nav-link nav-link--cta" data-i18n="nav_contact">Contacto</a></li>
+      <li class="nav-item--lang">
+        <button type="button" class="lang-toggle" id="langToggle" data-i18n-aria-label="lang_aria" aria-label="Cambiar idioma a inglés">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span data-i18n="lang_label">EN</span>
+        </button>
+      </li>
     </ul>
   </nav>
 
@@ -37,16 +43,16 @@
   <header class="article-hero">
     <div class="article-hero__inner">
       <p class="breadcrumb">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> <span data-i18n="breadcrumb_home">Inicio</span></a>
         <i class="fa-solid fa-chevron-right" style="font-size:.7rem;"></i>
-        <span>Createx 2026</span>
+        <span data-i18n="cx_breadcrumb">Createx 2026</span>
       </p>
-      <h1>Más allá de las pasarelas</h1>
-      <h2>Lo que Createx 2026 nos enseñó sobre el futuro del Sistema Moda</h2>
+      <h1 data-i18n="cx_h1">Más allá de las pasarelas</h1>
+      <h2 data-i18n="cx_h2">Lo que Createx 2026 nos enseñó sobre el futuro del Sistema Moda</h2>
       <div class="article-hero__meta">
-        <span><i class="fa-solid fa-location-dot"></i> Corferias, Bogotá D.C.</span>
-        <span><i class="fa-solid fa-shirt"></i> Sistema Moda · 8.ª edición</span>
-        <span><i class="fa-solid fa-industry"></i> Cadena de suministro</span>
+        <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="cx_meta1">Corferias, Bogotá D.C.</span></span>
+        <span><i class="fa-solid fa-shirt"></i> <span data-i18n="cx_meta2">Sistema Moda · 8.ª edición</span></span>
+        <span><i class="fa-solid fa-industry"></i> <span data-i18n="cx_meta3">Cadena de suministro</span></span>
       </div>
     </div>
   </header>
@@ -54,7 +60,7 @@
   <!-- ===================== ARTÍCULO ===================== -->
   <main>
     <article class="article">
-      <p class="lead">
+      <p class="lead" data-i18n="cx_lead">
         Asistir a Createx 2026 no se trata solo de ver prendas terminadas, sino de entender cómo se
         construye la moda desde el hilo. En su octava edición en Corferias, la feria consolidó a Bogotá
         como el epicentro de la cadena de suministro del país. Esta experiencia me dejó claro que el
@@ -64,21 +70,21 @@
       <div class="media-grid">
         <figure class="figure">
           <img src="img/Createx.jpg" alt="Feria Createx 2026" loading="lazy" />
-          <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span>Feria Createx</span><small>img/Createx.jpg</small></div>
-          <figcaption>Createx 2026 en Corferias, epicentro del sistema moda.</figcaption>
+          <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span data-i18n="ph_fair">Feria Createx</span><small>img/Createx.jpg</small></div>
+          <figcaption data-i18n="cx_fig1">Createx 2026 en Corferias, epicentro del sistema moda.</figcaption>
         </figure>
         <figure class="figure">
           <video controls poster="img/EsLaHora.jpg">
             <source src="img/EsLaHora.mp4" type="video/mp4" />
-            Tu navegador no soporta la reproducción de video.
+            <span data-i18n="cx_video_fallback">Tu navegador no soporta la reproducción de video.</span>
           </video>
-          <div class="figure__ph is-fashion"><i class="fa-solid fa-film"></i><span>Video del evento</span><small>img/EsLaHora.mp4</small></div>
-          <figcaption>"Es la hora": recorrido en video por la feria.</figcaption>
+          <div class="figure__ph is-fashion"><i class="fa-solid fa-film"></i><span data-i18n="ph_video">Video del evento</span><small>img/EsLaHora.mp4</small></div>
+          <figcaption data-i18n="cx_video1">"Es la hora": recorrido en video por la feria.</figcaption>
         </figure>
       </div>
 
-      <h3><i class="fa-solid fa-person-running"></i> El auge del Sportswear y el fenómeno global</h3>
-      <p>
+      <h3><i class="fa-solid fa-person-running"></i> <span data-i18n="cx_h3_1">El auge del Sportswear y el fenómeno global</span></h3>
+      <p data-i18n="cx_p1">
         Una de las sorpresas más grandes del evento fue el protagonismo absoluto de la ropa deportiva. Con
         el mercado de sportswear disparado y la cercanía de la Copa Mundial 2026, las marcas locales están
         apostando fuertemente por textiles de alto rendimiento. Pude ver de primera mano innovaciones en
@@ -89,21 +95,21 @@
       <div class="media-grid">
         <figure class="figure">
           <img src="img/Pasarela.jpg" alt="Pasarela en Createx 2026" loading="lazy" />
-          <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span>Pasarela</span><small>img/Pasarela.jpg</small></div>
-          <figcaption>Desfile de propuestas de sportswear y textiles de alto rendimiento.</figcaption>
+          <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span data-i18n="ph_runway">Pasarela</span><small>img/Pasarela.jpg</small></div>
+          <figcaption data-i18n="cx_fig2">Desfile de propuestas de sportswear y textiles de alto rendimiento.</figcaption>
         </figure>
         <figure class="figure">
           <video controls poster="img/chicaPasarela.JPG">
             <source src="img/Pasarelavid.mp4" type="video/mp4" />
-            Tu navegador no soporta la reproducción de video.
+            <span data-i18n="cx_video_fallback">Tu navegador no soporta la reproducción de video.</span>
           </video>
-          <div class="figure__ph is-fashion"><i class="fa-solid fa-film"></i><span>Video de la pasarela</span><small>img/Pasarelavid.mp4</small></div>
-          <figcaption>Video de la pasarela durante Createx 2026.</figcaption>
+          <div class="figure__ph is-fashion"><i class="fa-solid fa-film"></i><span data-i18n="ph_runway_video">Video de la pasarela</span><small>img/Pasarelavid.mp4</small></div>
+          <figcaption data-i18n="cx_video2">Video de la pasarela durante Createx 2026.</figcaption>
         </figure>
       </div>
 
-      <h3><i class="fa-solid fa-print"></i> Maquinaria, DTF y Automatización</h3>
-      <p>
+      <h3><i class="fa-solid fa-print"></i> <span data-i18n="cx_h3_2">Maquinaria, DTF y Automatización</span></h3>
+      <p data-i18n="cx_p2">
         Para los creadores y confeccionistas, el corazón del evento estuvo en las demostraciones en vivo de
         impresión industrial. La tecnología de impresión directa a film (DTF) avanzada y los sistemas de
         bordado automatizado prometen democratizar la producción, permitiendo que marcas emergentes compitan
@@ -112,11 +118,11 @@
 
       <figure class="figure">
         <img src="img/StandCreatex.jpg" alt="Stand de maquinaria en Createx" loading="lazy" />
-        <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span>Stand de maquinaria</span><small>img/StandCreatex.jpg</small></div>
-        <figcaption>Demostraciones en vivo de impresión DTF y bordado automatizado.</figcaption>
+        <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span data-i18n="ph_machinery">Stand de maquinaria</span><small>img/StandCreatex.jpg</small></div>
+        <figcaption data-i18n="cx_fig3">Demostraciones en vivo de impresión DTF y bordado automatizado.</figcaption>
       </figure>
 
-      <p>
+      <p data-i18n="cx_p3">
         Createx 2026 me demostró que para diseñar el futuro de la moda no basta con tener una buena idea
         estética; es obligatorio aliarse con la técnica y el desarrollo sostenible. El sistema moda
         colombiano está más fuerte, integrado y automatizado que nunca.
@@ -124,16 +130,16 @@
 
       <figure class="figure">
         <img src="img/Standmoda.jpg" alt="Stand de moda en Createx" loading="lazy" />
-        <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span>Stand de moda</span><small>img/Standmoda.jpg</small></div>
-        <figcaption>El sistema moda colombiano: integrado, automatizado y sostenible.</figcaption>
+        <div class="figure__ph is-fashion"><i class="fa-solid fa-image"></i><span data-i18n="ph_fashion_stand">Stand de moda</span><small>img/Standmoda.jpg</small></div>
+        <figcaption data-i18n="cx_fig4">El sistema moda colombiano: integrado, automatizado y sostenible.</figcaption>
       </figure>
 
-      <p class="article__closing">Y mucho más.</p>
+      <p class="article__closing" data-i18n="cx_closing">Y mucho más.</p>
     </article>
 
     <nav class="article__nav" aria-label="Navegación entre conferencias">
-      <a class="btn btn--ghost" href="colombia.html"><i class="fa-solid fa-arrow-left"></i> Ver Colombia 5.0</a>
-      <a class="btn btn--primary" href="index.html">Volver al inicio <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn btn--ghost" href="colombia.html"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="cx_nav_back">Ver Colombia 5.0</span></a>
+      <a class="btn btn--primary" href="index.html"><span data-i18n="cx_nav_next">Volver al inicio</span> <i class="fa-solid fa-arrow-right"></i></a>
     </nav>
   </main>
 
@@ -144,11 +150,11 @@
         <a href="index.html" class="brand brand--footer">
           <span class="brand__logo" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
           <span class="brand__text">
-            <strong>Conferencias</strong>
+            <strong data-i18n="brand_title">Conferencias</strong>
             <small>SENA · Distrito Capital</small>
           </span>
         </a>
-        <p class="footer__about">
+        <p class="footer__about" data-i18n="ft_about">
           Página de exposición de las conferencias Colombia 5.0 y Createx 2026, creada como
           evidencia de formación del SENA Distrito Capital.
         </p>
@@ -160,36 +166,36 @@
         </div>
       </div>
       <div class="footer__col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="ft_nav_title">Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html#eventos">Eventos</a></li>
-          <li><a href="colombia.html">Colombia 5.0</a></li>
-          <li><a href="createx.html">Createx 2026</a></li>
+          <li><a href="index.html" data-i18n="ft_nav_home">Inicio</a></li>
+          <li><a href="index.html#eventos" data-i18n="ft_nav_events">Eventos</a></li>
+          <li><a href="colombia.html" data-i18n="ft_nav_colombia">Colombia 5.0</a></li>
+          <li><a href="createx.html" data-i18n="ft_nav_createx">Createx 2026</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="ft_contact_title">Contacto</h4>
         <ul class="footer__contact">
           <li><i class="fa-solid fa-location-dot"></i> Calle 52 #13-65, Bogotá D.C.</li>
           <li><i class="fa-solid fa-phone"></i> +57 601 546 1500</li>
           <li><i class="fa-solid fa-envelope"></i> contacto@miseventos-sena.co</li>
-          <li><i class="fa-regular fa-clock"></i> Lun a Vie · 7:00 a.m. - 6:00 p.m.</li>
+          <li><i class="fa-regular fa-clock"></i> <span data-i18n="ar_hours">Lun a Vie · 7:00 a.m. - 6:00 p.m.</span></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Boletín</h4>
-        <p class="footer__about">Recibe novedades de próximos eventos.</p>
+        <h4 data-i18n="ft_newsletter_title">Boletín</h4>
+        <p class="footer__about" data-i18n="ft_newsletter_text">Recibe novedades de próximos eventos.</p>
         <form class="footer__form" id="newsletter">
-          <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" required />
+          <input type="email" placeholder="Tu correo electrónico" data-i18n-placeholder="ft_email_ph" aria-label="Correo electrónico" required />
           <button type="submit" aria-label="Suscribirse"><i class="fa-solid fa-paper-plane"></i></button>
         </form>
         <p class="footer__note" id="newsletterMsg" role="status"></p>
       </div>
     </div>
     <div class="footer__bar">
-      <p>© <span id="year"></span> Conferencias · SENA Distrito Capital. Todos los derechos reservados.</p>
-      <p>Hecho con <i class="fa-solid fa-heart"></i> para mi formación.</p>
+      <p>© <span id="year"></span> <span data-i18n="ft_copyright">Conferencias · SENA Distrito Capital. Todos los derechos reservados.</span></p>
+      <p><span data-i18n="ft_made_1">Hecho con</span> <i class="fa-solid fa-heart"></i> <span data-i18n="ft_made_2">para mi formación.</span></p>
     </div>
   </footer>
 

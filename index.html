@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Bitácora de dos conferencias a las que asistí: Colombia 5.0 (tecnología) y Createx 2026 (sistema moda), presentadas con la identidad visual del SENA Distrito Capital." />
-  <title>Conferencias · SENA Distrito Capital</title>
+  <title data-i18n="page_title_index">Conferencias · SENA Distrito Capital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -20,7 +20,7 @@
           <i class="fa-solid fa-graduation-cap"></i>
         </span>
         <span class="brand__text">
-          <strong>Conferencias</strong>
+          <strong data-i18n="brand_title">Conferencias</strong>
           <small>SENA · Distrito Capital</small>
         </span>
       </a>
@@ -30,34 +30,40 @@
       </button>
 
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-        <li><a href="#eventos" class="nav-link">Eventos</a></li>
-        <li><a href="#colombia5" class="nav-link">Colombia 5.0</a></li>
-        <li><a href="#createx" class="nav-link">Createx</a></li>
-        <li><a href="#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+        <li><a href="#inicio" class="nav-link active" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="#eventos" class="nav-link" data-i18n="nav_events">Eventos</a></li>
+        <li><a href="#colombia5" class="nav-link" data-i18n="nav_colombia">Colombia 5.0</a></li>
+        <li><a href="#createx" class="nav-link" data-i18n="nav_createx">Createx</a></li>
+        <li><a href="#contacto" class="nav-link nav-link--cta" data-i18n="nav_contact">Contacto</a></li>
+        <li class="nav-item--lang">
+          <button type="button" class="lang-toggle" id="langToggle" data-i18n-aria-label="lang_aria" aria-label="Cambiar idioma a inglés">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <span data-i18n="lang_label">EN</span>
+          </button>
+        </li>
       </ul>
     </nav>
 
     <!-- ===================== HERO ===================== -->
     <div class="hero">
       <div class="hero__content">
-        <p class="hero__eyebrow"><i class="fa-solid fa-location-dot"></i> Bogotá D.C. · Colombia</p>
+        <p class="hero__eyebrow"><i class="fa-solid fa-location-dot"></i> <span data-i18n="hero_eyebrow">Bogotá D.C. · Colombia</span></p>
 
-        <h1 class="hero__title">Dos conferencias, una misma <span>pasión por aprender</span></h1>
-          <p class="hero__subtitle">
+        <h1 class="hero__title" data-i18n-html="hero_title">Dos conferencias, una misma <span>pasión por aprender</span></h1>
+          <p class="hero__subtitle" data-i18n-html="hero_subtitle">
             Una bitácora visual de las dos conferencias que viví como aprendiz del SENA en Corferias:
             <strong>Colombia 5.0</strong> (tecnología e innovación) y <strong>Createx 2026</strong> (el sistema moda).
             Conoce los momentos, aprendizajes y la energía de cada encuentro.
           </p>
         <div class="hero__actions">
-          <a href="#eventos" class="btn btn--primary"><i class="fa-solid fa-calendar-check"></i> Ver eventos</a>
-          <a href="#contacto" class="btn btn--ghost">Contáctame</a>
+          <a href="#eventos" class="btn btn--primary"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="hero_btn_events">Ver eventos</span></a>
+          <a href="#contacto" class="btn btn--ghost" data-i18n="hero_btn_contact">Contáctame</a>
         </div>
 
         <ul class="hero__stats">
-          <li><span class="num" data-count="2">0</span><span class="lbl">Eventos</span></li>
-          <li><span class="num" data-count="16">0</span><span class="lbl">Horas vividas</span></li>
-          <li><span class="num" data-count="20">0</span><span class="lbl">Personas conocidas</span></li>
+          <li><span class="num" data-count="2">0</span><span class="lbl" data-i18n="stat_events">Eventos</span></li>
+          <li><span class="num" data-count="16">0</span><span class="lbl" data-i18n="stat_hours">Horas vividas</span></li>
+          <li><span class="num" data-count="20">0</span><span class="lbl" data-i18n="stat_people">Personas conocidas</span></li>
         </ul>
       </div>
 
@@ -83,32 +89,32 @@
     <!-- ===================== EVENTOS (TARJETAS) ===================== -->
     <section class="section" id="eventos">
       <div class="section__head reveal">
-        <span class="pill">Galería de experiencias</span>
-        <h2 class="section__title">Las conferencias a las que asistí</h2>
-        <p class="section__lead">El SENA ha participado en varias conferencias de tecnología, innovación y emprendimiento. Estas son las dos que viví. Haz clic en “Ver más” para leer la crónica completa.</p>
+        <span class="pill" data-i18n="ev_pill">Galería de experiencias</span>
+        <h2 class="section__title" data-i18n="ev_title">Las conferencias a las que asistí</h2>
+        <p class="section__lead" data-i18n="ev_lead">El SENA ha participado en varias conferencias de tecnología, innovación y emprendimiento. Estas son las dos que viví. Haz clic en “Ver más” para leer la crónica completa.</p>
       </div>
 
       <div class="cards">
         <!-- Card Colombia 5.0 -->
         <article class="card reveal" id="colombia5" style="--delay:.05s">
           <a href="colombia.html" class="card__media card__media--tech" aria-label="Abrir crónica de Colombia 5.0">
-            <span class="card__tag"><i class="fa-solid fa-microchip"></i> Tecnología</span>
+            <span class="card__tag"><i class="fa-solid fa-microchip"></i> <span data-i18n="card_co_tag">Tecnología</span></span>
             <img src="img/colombia5.webp" alt="Colombia 5.0" class="card__img" loading="lazy" onerror="this.style.display='none'" />
             <div class="card__icon"><i class="fa-solid fa-robot"></i></div>
           </a>
           <div class="card__body">
-            <p class="card__date"><i class="fa-solid fa-location-dot"></i> Corferias, Bogotá D.C.</p>
+            <p class="card__date"><i class="fa-solid fa-location-dot"></i> <span data-i18n="card_date">Corferias, Bogotá D.C.</span></p>
             <h3 class="card__title">Colombia 5.0</h3>
-            <p class="card__text">
+            <p class="card__text" data-i18n="card_co_text">
               Tecnología con corazón: el encuentro nacional donde la innovación se encuentra con el
               propósito social. IA, ciberseguridad, Web3 y hackatones bajo la premisa de la “Sociedad 5.0”.
             </p>
             <ul class="card__chips">
-              <li>IA</li><li>Ciberseguridad</li><li>Web3</li><li>Hackatones</li>
+              <li data-i18n="co_chip1">IA</li><li data-i18n="co_chip2">Ciberseguridad</li><li data-i18n="co_chip3">Web3</li><li data-i18n="co_chip4">Hackatones</li>
             </ul>
             <div class="card__footer">
-              <span class="card__place"><i class="fa-solid fa-microchip"></i> Innovación y emprendimiento</span>
-              <a class="card__btn" href="colombia.html">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="card__place"><i class="fa-solid fa-microchip"></i> <span data-i18n="card_co_place">Innovación y emprendimiento</span></span>
+              <a class="card__btn" href="colombia.html"><span data-i18n="card_btn_more">Ver más</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </article>
@@ -116,23 +122,23 @@
         <!-- Card Createx 2026 -->
         <article class="card reveal" id="createx" style="--delay:.18s">
           <a href="createx.html" class="card__media card__media--fashion" aria-label="Abrir crónica de Createx 2026">
-            <span class="card__tag"><i class="fa-solid fa-shirt"></i> Sistema Moda</span>
+            <span class="card__tag"><i class="fa-solid fa-shirt"></i> <span data-i18n="card_cx_tag">Sistema Moda</span></span>
             <img src="img/Createx.jpg" alt="Createx 2026" class="card__img" loading="lazy" onerror="this.style.display='none'" />
             <div class="card__icon"><i class="fa-solid fa-scissors"></i></div>
           </a>
           <div class="card__body">
-            <p class="card__date"><i class="fa-solid fa-location-dot"></i> Corferias, Bogotá D.C.</p>
+            <p class="card__date"><i class="fa-solid fa-location-dot"></i> <span data-i18n="card_date">Corferias, Bogotá D.C.</span></p>
             <h3 class="card__title">Createx 2026</h3>
-            <p class="card__text">
+            <p class="card__text" data-i18n="card_cx_text">
               Más allá de las pasarelas: cómo se construye la moda desde el hilo. Sportswear, maquinaria,
               impresión DTF y automatización en la cadena de suministro del sistema moda colombiano.
             </p>
             <ul class="card__chips">
-              <li>Sportswear</li><li>DTF</li><li>Textil</li><li>Automatización</li>
+              <li data-i18n="cx_chip1">Sportswear</li><li data-i18n="cx_chip2">DTF</li><li data-i18n="cx_chip3">Textil</li><li data-i18n="cx_chip4">Automatización</li>
             </ul>
             <div class="card__footer">
-              <span class="card__place"><i class="fa-solid fa-shirt"></i> 8.ª edición · Sistema Moda</span>
-              <a class="card__btn" href="createx.html">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="card__place"><i class="fa-solid fa-shirt"></i> <span data-i18n="card_cx_place">8.ª edición · Sistema Moda</span></span>
+              <a class="card__btn" href="createx.html"><span data-i18n="card_btn_more">Ver más</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </article>
@@ -143,23 +149,23 @@
     <section class="strip reveal">
       <div class="strip__item">
         <i class="fa-solid fa-lightbulb"></i>
-        <h4>Aprendizaje</h4>
-        <p>Apliqué lo visto en clase en escenarios reales.</p>
+        <h4 data-i18n="strip1_h">Aprendizaje</h4>
+        <p data-i18n="strip1_p">Apliqué lo visto en clase en escenarios reales.</p>
       </div>
       <div class="strip__item">
         <i class="fa-solid fa-people-group"></i>
-        <h4>Networking</h4>
-        <p>Conocí aprendices, instructores y empresas.</p>
+        <h4 data-i18n="strip2_h">Networking</h4>
+        <p data-i18n="strip2_p">Conocí aprendices, instructores y empresas.</p>
       </div>
       <div class="strip__item">
         <i class="fa-solid fa-camera-retro"></i>
-        <h4>Recuerdos</h4>
-        <p>Momentos que quedan para la bitácora.</p>
+        <h4 data-i18n="strip3_h">Recuerdos</h4>
+        <p data-i18n="strip3_p">Momentos que quedan para la bitácora.</p>
       </div>
       <div class="strip__item">
         <i class="fa-solid fa-award"></i>
-        <h4>Crecimiento</h4>
-        <p>Más motivación para seguir formándome.</p>
+        <h4 data-i18n="strip4_h">Crecimiento</h4>
+        <p data-i18n="strip4_p">Más motivación para seguir formándome.</p>
       </div>
     </section>
   </main>
@@ -171,11 +177,11 @@
         <a href="#inicio" class="brand brand--footer">
           <span class="brand__logo" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
           <span class="brand__text">
-            <strong>Conferencias</strong>
+            <strong data-i18n="brand_title">Conferencias</strong>
             <small>SENA · Distrito Capital</small>
           </span>
         </a>
-        <p class="footer__about">
+        <p class="footer__about" data-i18n="ft_about">
           Página de exposición de las conferencias Colombia 5.0 y Createx 2026, creada como
           evidencia de formación del SENA Distrito Capital.
         </p>
@@ -188,30 +194,30 @@
       </div>
 
       <div class="footer__col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="ft_nav_title">Navegación</h4>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="colombia.html">Colombia 5.0</a></li>
-          <li><a href="createx.html">Createx 2026</a></li>
+          <li><a href="#inicio" data-i18n="ft_nav_home">Inicio</a></li>
+          <li><a href="#eventos" data-i18n="ft_nav_events">Eventos</a></li>
+          <li><a href="colombia.html" data-i18n="ft_nav_colombia">Colombia 5.0</a></li>
+          <li><a href="createx.html" data-i18n="ft_nav_createx">Createx 2026</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="ft_contact_title">Contacto</h4>
         <ul class="footer__contact">
           <li><i class="fa-solid fa-location-dot"></i> Sena calle 30, Bogotá D.C.</li>
           <li><i class="fa-solid fa-phone"></i> +57 3134462068</li>
           <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i> Johnnyfabiancardozo24@gmail...</a></li>
-          <li><i class="fa-regular fa-clock"></i> Lun a Vie · 7:00 a.m. - 6:00 p.m. via Whatsapp</li>
+          <li><i class="fa-regular fa-clock"></i> <span data-i18n="ix_hours">Lun a Vie · 7:00 a.m. - 6:00 p.m. via Whatsapp</span></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Boletín</h4>
-        <p class="footer__about">Recibe novedades de próximos eventos.</p>
+        <h4 data-i18n="ft_newsletter_title">Boletín</h4>
+        <p class="footer__about" data-i18n="ft_newsletter_text">Recibe novedades de próximos eventos.</p>
         <form class="footer__form" id="newsletter">
-          <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" required />
+          <input type="email" placeholder="Tu correo electrónico" data-i18n-placeholder="ft_email_ph" aria-label="Correo electrónico" required />
           <button type="submit" aria-label="Suscribirse"><i class="fa-solid fa-paper-plane"></i></button>
         </form>
         <p class="footer__note" id="newsletterMsg" role="status"></p>
@@ -219,8 +225,8 @@
     </div>
 
     <div class="footer__bar">
-      <p>© <span id="year"></span> Conferencias · SENA Distrito Capital. Todos los derechos reservados.</p>
-      <p>Hecho con <i class="fa-solid fa-heart"></i> para mi formación.</p>
+      <p>© <span id="year"></span> <span data-i18n="ft_copyright">Conferencias · SENA Distrito Capital. Todos los derechos reservados.</span></p>
+      <p><span data-i18n="ft_made_1">Hecho con</span> <i class="fa-solid fa-heart"></i> <span data-i18n="ft_made_2">para mi formación.</span></p>
     </div>
   </footer>
 
