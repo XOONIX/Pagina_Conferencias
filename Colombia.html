@@ -1,34 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia 5.0</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crónica de Colombia 5.0: tecnología con corazón, IA, ciberseguridad, Web3 y hackatones en Corferias, vivido por un aprendiz del SENA Distrito Capital." />
+  <title>Colombia 5.0 · Conferencias SENA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <div class="contenedor_pagina">
-        <h1><a href="index.html" target="_self" class="enlace-resaltado">Tecnología con corazón:</a></h1>
-        <h2>Lo que viví en Colombia 5.0 y el futuro digital del país</h2>
-            <p>Asistir al encuentro nacional de Colombia 5.0 en Corferias cambia por completo la perspectiva sobre la tecnología. Este no es un evento corporativo frío; es un espacio donde la innovación se encuentra con el propósito social. Bajo la premisa de la "Sociedad 5.0", me quedó claro que el verdadero avance digital de Colombia no se mide solo en la velocidad de la red, sino en cómo transforma vidas y genera soberanía tecnológica.</p>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" aria-label="Navegación principal" style="position:sticky;top:0;z-index:1000;background:#fff;box-shadow:var(--shadow-sm);">
+    <a href="index.html" class="brand">
+      <span class="brand__logo" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span class="brand__text">
+        <strong>Conferencias</strong>
+        <small>SENA · Distrito Capital</small>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="index.html#eventos" class="nav-link">Eventos</a></li>
+      <li><a href="colombia.html" class="nav-link active">Colombia 5.0</a></li>
+      <li><a href="createx.html" class="nav-link">Createx</a></li>
+      <li><a href="index.html#contacto" class="nav-link nav-link--cta">Contacto</a></li>
+    </ul>
+  </nav>
 
-                <a href="index.html" target="_self">
-                <img src="./img/partescolombia.jpg" alt="Partes del evento" class="imagen">
-                </a>
-            <h3>Inteligencia Artificial y Ciberseguridad en el día a día</h3>
-                <p>Uno de los ejes más fuertes del evento fue la descentralización del conocimiento en IA y la seguridad digital. Pude presenciar paneles increíbles que abordaron desde el uso ético de algoritmos hasta estrategias prácticas para blindar nuestra identidad en la red. Espacios como la iniciativa de CiberPaz demostraron que la alfabetización digital y la creación de entornos virtuales seguros son prioridades urgentes para los ciudadanos del país.</p>
-                <img src="./img/CiberPaz.JPG" alt="Paz Sobre tecnologia" class="imagen">
-
-            <h3>El despliegue de las tecnologías Web3 y el software libre</h3>
-                <p>Para quienes seguimos de cerca el desarrollo de internet, la zona de tecnologías emergentes fue una mina de oro. El evento puso sobre la mesa la importancia del software libre como pilar fundamental para construir una verdadera soberanía tecnológica. Además, las discusiones sobre Web3 evidenciaron que el ecosistema digital colombiano está madurando rápidamente hacia modelos de economía digital más transparentes y colaborativos.</p>
-                <img src="./img/colombia5.webp" alt="Conferencia" class="imagen">
-
-            <h3>El poder de las Hackatones y el Talento Regional</h3>
-                <p>Lo más emocionante de recorrer el evento fue ver la vibrante energía de las Hackatones de Colombia 5.0. Equipos de jóvenes programadores, estudiantes y creativos compitiendo en vivo para diseñar soluciones tecnológicas destinadas a resolver problemáticas reales de los territorios, desde alertas tempranas ambientales hasta conectividad comunitaria. Esto demostró que el talento digital colombiano está listo para competir globalmente.</p>
-                <img src="./img/hakathon.JPG" alt="Conferencia" class="imagen">
-
-        <p>Colombia 5.0 me dejó una gran lección: el futuro digital de nuestro país ya no se espera, se construye con sentido humano. Salí de la feria con la certeza de que la tecnología en Colombia dejó de ser un lujo de pocos para convertirse en la herramienta más poderosa de equidad, productividad y transformación social. Y mucho mas</p>
+  <!-- ===================== HERO DEL ARTÍCULO ===================== -->
+  <header class="article-hero">
+    <div class="article-hero__inner">
+      <p class="breadcrumb">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:.7rem;"></i>
+        <span>Colombia 5.0</span>
+      </p>
+      <h1>Tecnología con corazón</h1>
+      <h2>Lo que viví en Colombia 5.0 y el futuro digital del país</h2>
+      <div class="article-hero__meta">
+        <span><i class="fa-solid fa-location-dot"></i> Corferias, Bogotá D.C.</span>
+        <span><i class="fa-solid fa-microchip"></i> Tecnología e innovación</span>
+        <span><i class="fa-solid fa-user-graduate"></i> Sociedad 5.0</span>
+      </div>
     </div>
+  </header>
+
+  <!-- ===================== ARTÍCULO ===================== -->
+  <main>
+    <article class="article">
+      <p class="lead">
+        Asistir al encuentro nacional de Colombia 5.0 en Corferias cambia por completo la perspectiva
+        sobre la tecnología. Este no es un evento corporativo frío; es un espacio donde la innovación se
+        encuentra con el propósito social. Bajo la premisa de la "Sociedad 5.0", me quedó claro que el
+        verdadero avance digital de Colombia no se mide solo en la velocidad de la red, sino en cómo
+        transforma vidas y genera soberanía tecnológica.
+      </p>
+
+      <figure class="figure">
+        <img src="img/partescolombia.jpg" alt="Partes del evento Colombia 5.0" loading="lazy" />
+        <div class="figure__ph"><i class="fa-solid fa-image"></i><span>Imagen del evento</span><small>img/partescolombia.jpg</small></div>
+        <figcaption>Recorrido por los espacios del encuentro Colombia 5.0 en Corferias.</figcaption>
+      </figure>
+
+      <h3><i class="fa-solid fa-shield-halved"></i> Inteligencia Artificial y Ciberseguridad en el día a día</h3>
+      <p>
+        Uno de los ejes más fuertes del evento fue la descentralización del conocimiento en IA y la
+        seguridad digital. Pude presenciar paneles increíbles que abordaron desde el uso ético de
+        algoritmos hasta estrategias prácticas para blindar nuestra identidad en la red. Espacios como la
+        iniciativa de CiberPaz demostraron que la alfabetización digital y la creación de entornos
+        virtuales seguros son prioridades urgentes para los ciudadanos del país.
+      </p>
+
+      <figure class="figure">
+        <img src="img/CiberPaz.JPG" alt="Paz sobre tecnología — iniciativa CiberPaz" loading="lazy" />
+        <div class="figure__ph"><i class="fa-solid fa-image"></i><span>Iniciativa CiberPaz</span><small>img/CiberPaz.JPG</small></div>
+        <figcaption>La iniciativa CiberPaz: alfabetización digital y entornos virtuales seguros.</figcaption>
+      </figure>
+
+      <h3><i class="fa-solid fa-code-branch"></i> El despliegue de las tecnologías Web3 y el software libre</h3>
+      <p>
+        Para quienes seguimos de cerca el desarrollo de internet, la zona de tecnologías emergentes fue una
+        mina de oro. El evento puso sobre la mesa la importancia del software libre como pilar fundamental
+        para construir una verdadera soberanía tecnológica. Además, las discusiones sobre Web3 evidenciaron
+        que el ecosistema digital colombiano está madurando rápidamente hacia modelos de economía digital
+        más transparentes y colaborativos.
+      </p>
+
+      <figure class="figure">
+        <img src="img/colombia5.webp" alt="Conferencia Colombia 5.0" loading="lazy" />
+        <div class="figure__ph"><i class="fa-solid fa-image"></i><span>Conferencia</span><small>img/colombia5.webp</small></div>
+        <figcaption>Charlas sobre Web3, software libre y soberanía tecnológica.</figcaption>
+      </figure>
+
+      <h3><i class="fa-solid fa-laptop-code"></i> El poder de las Hackatones y el Talento Regional</h3>
+      <p>
+        Lo más emocionante de recorrer el evento fue ver la vibrante energía de las Hackatones de Colombia
+        5.0. Equipos de jóvenes programadores, estudiantes y creativos compitiendo en vivo para diseñar
+        soluciones tecnológicas destinadas a resolver problemáticas reales de los territorios, desde
+        alertas tempranas ambientales hasta conectividad comunitaria. Esto demostró que el talento digital
+        colombiano está listo para competir globalmente.
+      </p>
+
+      <figure class="figure">
+        <img src="img/hakathon.jpg" alt="Hackatón en Colombia 5.0" loading="lazy" />
+        <div class="figure__ph"><i class="fa-solid fa-image"></i><span>Hackatón</span><small>img/hakathon.jpg</small></div>
+        <figcaption>Equipos compitiendo en vivo en las hackatones del evento.</figcaption>
+      </figure>
+
+      <p class="article__closing">
+        Colombia 5.0 me dejó una gran lección: el futuro digital de nuestro país ya no se espera, se
+        construye con sentido humano. Salí de la feria con la certeza de que la tecnología en Colombia dejó
+        de ser un lujo de pocos para convertirse en la herramienta más poderosa de equidad, productividad
+        y transformación social. Y mucho más.
+      </p>
+    </article>
+
+    <nav class="article__nav" aria-label="Navegación entre conferencias">
+      <a class="btn btn--ghost" href="index.html"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+      <a class="btn btn--primary" href="createx.html">Ver Createx 2026 <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="contacto">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="brand brand--footer">
+          <span class="brand__logo" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="brand__text">
+            <strong>Conferencias</strong>
+            <small>SENA · Distrito Capital</small>
+          </span>
+        </a>
+        <p class="footer__about">
+          Página de exposición de las conferencias Colombia 5.0 y Createx 2026, creada como
+          evidencia de formación del SENA Distrito Capital.
+        </p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#eventos">Eventos</a></li>
+          <li><a href="colombia.html">Colombia 5.0</a></li>
+          <li><a href="createx.html">Createx 2026</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li><i class="fa-solid fa-location-dot"></i> Calle 52 #13-65, Bogotá D.C.</li>
+          <li><i class="fa-solid fa-phone"></i> +57 601 546 1500</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@miseventos-sena.co</li>
+          <li><i class="fa-regular fa-clock"></i> Lun a Vie · 7:00 a.m. - 6:00 p.m.</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Boletín</h4>
+        <p class="footer__about">Recibe novedades de próximos eventos.</p>
+        <form class="footer__form" id="newsletter">
+          <input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" required />
+          <button type="submit" aria-label="Suscribirse"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <p class="footer__note" id="newsletterMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© <span id="year"></span> Conferencias · SENA Distrito Capital. Todos los derechos reservados.</p>
+      <p>Hecho con <i class="fa-solid fa-heart"></i> para mi formación.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
 </body>
 </html>
